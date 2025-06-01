@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PaNorth Car Rental</title>
+  
+<link rel="stylesheet" href="./PaNorth Car Rental_files/style.css"></head>
+<body>
+  <header>
+    
+    <div class="logo">PaNorth Car Rental</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="http://127.0.0.1:5500/index.html">Home</a></li>
+        <li><a href="http://127.0.0.1:5500/cars.html">Cars</a></li>
+        <li><a href="http://127.0.0.1:5500/login.html">Login</a></li>
+        <li><a href="http://127.0.0.1:5500/register.html">Register</a></li>
+        <li><a href="http://127.0.0.1:5500/dashboard.html">Dashboard</a></li>
+      </ul>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="./PaNorth Car Rental_files/pn.png" alt="img" class="hero-image">
+    <h1>Reliable, Affordable, and Fast Car Rentals</h1>
+    <p>Explore Philippines with ease</p>
+    <a href="http://127.0.0.1:5500/cars.html" class="btn">View Available Cars</a>
+  </section>
+
+  <section class="features">
+    <div class="feature-box">
+      <h2>Wide Range of Cars</h2>
+      <p>Choose from economy to luxury vehicles for any occasion.</p>
+    </div>
+    <div class="feature-box">
+      <h2>Affordable Rates</h2>
+      <p>Competitive pricing with no hidden fees.</p>
+    </div>
+    <div class="feature-box">
+      <h2>Easy Booking</h2>
+      <p>Quick online reservations with real-time availability.</p>
+    </div>
+  </section>
+
+  <section class="catalogs">
+  <h2>Our Car Catalog</h2>
+  <div class="catalog-grid">
+    <div class="car-card">
+      <img src="./PaNorth Car Rental_files/vios.jpg" alt="Car 1">
+      <h3>Toyota Vios</h3>
+      <p>₱2,000/day - Compact and fuel-efficient.</p>
+    </div>
+    <div class="car-card">
+      <img src="./PaNorth Car Rental_files/monter.avif" alt="Car 2">
+      <h3>Mitsubishi Montero</h3>
+      <p>₱3,500/day - Powerful and spacious SUV.</p>
+    </div>
+    <div class="car-card">
+      <img src="./PaNorth Car Rental_files/Civics.avif" alt="Car 3">
+      <h3>Honda Civic</h3>
+      <p>₱2,800/day - Sporty and stylish comfort.</p>
+    </div>
+  </div>
+</section>
+
+<section class="services">
+  <h2>Services Offered</h2>
+  <div class="services-grid">
+    <div class="service-card">
+      <h3>Wedding Car Rentals</h3>
+      <p>Arrive in style on your big day with our elegant and luxurious wedding cars.</p>
+    </div>
+    <div class="service-card">
+      <h3>Airport Pick-up &amp; Drop-off</h3>
+      <p>Reliable and on-time transport to and from the airport for a stress-free journey.</p>
+    </div>
+    <div class="service-card">
+      <h3>Corporate Rentals</h3>
+      <p>Professional car rental services for business meetings and corporate events.</p>
+    </div>
+    <div class="service-card">
+      <h3>Self-Drive Rentals</h3>
+      <p>Drive at your own pace with our flexible self-drive car rental options.</p>
+    </div>
+    <div class="service-card">
+      <h3>Chauffeur Services</h3>
+      <p>Relax and let our professional drivers take you where you need to go.</p>
+    </div>
+    <div class="service-card">
+      <h3>Long-Term Rentals</h3>
+      <p>Special discounts and packages available for long-term car rentals.</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="reviews">
+  <h2>What Our Customers Say</h2>
+  <div class="review-boxes">
+    <div class="review">
+      <p>"The booking was super smooth and the car was in perfect condition!"</p>
+      <h4>- Maria D.</h4>
+    </div>
+    <div class="review">
+      <p>"Excellent customer service and very affordable rates!"</p>
+      <h4>- Juan C.</h4>
+    </div>
+    <div class="review">
+      <p>"Highly recommended for road trips around Luzon!"</p>
+      <h4>- Kenji P.</h4>
+    </div>
+  </div>
+</section>
+
+
+
+  <footer>
+    <p>© 2025 PaNorth Car Rental. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    }
+  </script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
